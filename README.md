@@ -5,6 +5,6 @@ This demonstrates webgl
     npm install
     npm start
 
-To update the bower packages:
+The bower dependencies are checked into the project under public/vendor. To update the bower packages:
 
     gulp bower

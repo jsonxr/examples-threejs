@@ -25,7 +25,7 @@ gulp.task('bower', ['bower-copy']);
 // nodemon
 //----------------------------------------------------------------------------
 
-gulp.task('default', ['bower'], function taskNodeMon() {
+gulp.task('default', function taskNodeMon() {
   var options = {
     watch: ['server.js'],
     script: 'server.js',
