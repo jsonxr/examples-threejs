@@ -2,26 +2,11 @@ function Render(id, options) {
   var canvas = document.getElementById(id);
   options = options || {};
   var fov = options.fov || 75;
-
-  var rendererOptions = {
-    canvas: canvas,
-    antialias: options.antialias || false
-  };
+  // Set initial width/height
   var width = canvas.offsetWidth;
   var height = canvas.offsetHeight;
-  console.log("width="+width + " height=" + height);
-
-  var height = parseInt(window.getComputedStyle(canvas)
-    .getPropertyValue("height"), 10);
-  var width = parseInt(window.getComputedStyle(canvas)
-    .getPropertyValue("width"), 10);
-  console.log("create: width="+width + " height=" + height);
-
-
-
   var camera = new THREE.PerspectiveCamera( fov, width/height, 0.1, 1000 );
-
-  //debugger
+  // Create the renderer
   var renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     antialias: true
@@ -31,17 +16,15 @@ function Render(id, options) {
     renderer: renderer,
     canvas: canvas,
     camera: camera
-  }, function (width, height) {
-
   });
 
+  // Create a scene!
   var scene = new THREE.Scene();
   var geometry = new THREE.BoxGeometry( 1, 1, 1 );
   var material = new THREE.MeshBasicMaterial( {
     color: 0xff5299,
     wireframe: true
   } );
-
   var cube = new THREE.Mesh( geometry, material );
   scene.add( cube );
 
