@@ -28,4 +28,9 @@ node_modules
 # Bower
 #---------------------------------
 bower_components
-#public/vendor/js
+#public/vendor
+
+#---------------------------------
+# IDE
+#---------------------------------
+.idea

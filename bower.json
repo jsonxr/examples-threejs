@@ -12,6 +12,8 @@
     "tests"
   ],
   "dependencies": {
-    "threejs": "r69"
+    "threejs": "r69",
+    "traceur": "~0.0.79",
+    "HTML5-Reset": "~2.1.2"
   }
 }

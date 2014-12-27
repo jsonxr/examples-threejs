@@ -13,10 +13,15 @@ gulp.task('bower-install', function taskBowerInstall() {
 
 gulp.task('bower-copy', ['bower-install'], function taskBowerCopy() {
   return gulp.src([
-      'bower_components/threejs/build/three.min.js'
+      'bower_components/HTML5-Reset/assets/css/reset.css',
+      'bower_components/threejs/build/three.js',
+      'bower_components/threejs/build/three.min.js',
+      'bower_components/traceur/traceur.min.js',
+      'bower_components/traceur/traceur.min.map'
     ])
-    .pipe(gulp.dest('public/vendor/js'));
+    .pipe(gulp.dest('public/vendor'));
 });
+
 
 gulp.task('bower', ['bower-copy']);
 

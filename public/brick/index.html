@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../vendor/reset.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+
+<!-- Bootstrap traceur es6 -->
+<script src="../vendor/traceur.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    new traceur.WebPageTranscoder(document.location.href).run();
+    traceur.options.experimental = true;
+</script>
+
+<!--  Three.js -->
+<script src="../vendor/three.js" type="text/javascript"></script>
+<script src="../lib/threex/threex-windowresizer.js"
+        type="text/javascript"></script>
+
+<canvas id="canvas">
+    You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to
+    improve your experience.</p>
+</canvas>
+
+<!-- My App -->
+<script src="app.js" type="text/javascript"></script>
+
+<!--<script type="text/javascript">-->
+    <!--var canvas = document.getElementById('game');-->
+    <!--var callback = function callback(){-->
+        <!--var height = window.getComputedStyle(canvas)-->
+                <!--.getPropertyValue("height");-->
+        <!--var width = window.getComputedStyle(canvas)-->
+                <!--.getPropertyValue("width");-->
+
+        <!--console.log("w,h="+width+","+height);-->
+    <!--};-->
+    <!--window.addEventListener('resize', callback, false);-->
+    <!--var renderer = new THREE.WebGLRenderer({ canvas: canvas});-->
+<!--</script>-->
+
+</body>
+</html>
+
+
+
