@@ -1,3 +1,10 @@
-examples-webgl
+# examples-webgl
 ==============
-Hi, this is an example of webgl
+This demonstrates webgl
+
+    npm install
+    npm start
+
+To update the bower packages:
+
+    gulp bower

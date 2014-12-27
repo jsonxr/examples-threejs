@@ -1,0 +1,31 @@
+{
+  "name": "examples-webgl",
+  "version": "1.0.0",
+  "description": "==============",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsonxr/examples-webgl.git"
+  },
+  "keywords": [
+    "webgl"
+  ],
+  "author": "Jason Rowland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonxr/examples-webgl/issues"
+  },
+  "homepage": "https://github.com/jsonxr/examples-webgl",
+  "dependencies": {
+    "express": "^4.10.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-bower": "0.0.7",
+    "gulp-nodemon": "^1.0.4"
+  }
+}
