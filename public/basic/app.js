@@ -20,6 +20,10 @@ function Render(id, options) {
 
   // Create a scene!
   var scene = new THREE.Scene();
+
+  axes = new THREE.AxisHelper(500);
+  scene.add(axes);
+
   var geometry = new THREE.BoxGeometry( 1, 1, 1 );
   var material = new THREE.MeshBasicMaterial( {
     color: 0xff5299,
@@ -28,7 +32,7 @@ function Render(id, options) {
   var cube = new THREE.Mesh( geometry, material );
   scene.add( cube );
 
-  camera.position.z = 2;
+  camera.position.set(1,1,5);
 
   function render() {
     requestAnimationFrame( render );
